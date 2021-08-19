@@ -9,7 +9,7 @@
 
 ## Installation
 
-### Part I: ROS and Docker
+### Part I: ROS setup in Docker
 - clone the `robotic_mosaic` folder
 - build the docker image using Dockerfile
     - in VSCode press `ctrl+shift+p` then type `Docker images: Build image`
@@ -17,7 +17,7 @@
 
 
 ## Usage
-### Run Docker containers for ROS 
+### Run your ROS nodes with Docker 
 - open the `robotic_mosaic` folder in VSCode  
 - run multiple containers from the built image using the `docker-compose.yml` using VSCode terminal
     - docker-compose up -d
