@@ -163,6 +163,29 @@ services:
 ```
 Right click on the docker-compose.yml file from your explorer menu in VSCode. and select `Compose Up`
 
+![compose](./media/composeup.png)
+
+Alternatively you can try this in terminal:
+```
+docker-compose up
+```
+or to run in background:
+```
+docker-compose up -d
+```
+
+Here is the output in terminal:
+
+![compose_terminal](./media/compose_terminal.png)
+
+As well you can review the log outputs for each service separately:
+In a new terminal from the folder containing docker-compose.yml, try:
+
+```
+docker-compose logs subscriber
+```
+
+![compose_logs](./media/compose_logs.png)
 
 # Additional Resources
 - [List of available ROS images on Docker](https://registry.hub.docker.com/_/ros/)
