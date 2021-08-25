@@ -187,6 +187,12 @@ docker-compose logs subscriber
 
 ![compose_logs](./media/compose_logs.png)
 
+to shut-down your containers / ROS nodes, you can use:
+```
+docker-compose down
+```
+
+
 # Additional Resources
 - [List of available ROS images on Docker](https://registry.hub.docker.com/_/ros/)
 - [Docker compose | ROS](http://wiki.ros.org/docker/Tutorials/Compose)
