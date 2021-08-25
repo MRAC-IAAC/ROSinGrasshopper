@@ -7,12 +7,13 @@ This repository contains tutorials integration of [ROS](https://www.ros.org/) (R
 
 # Requirements
 
-- Operating System: You can use Mac or Windows 10 operating systems for most of the tutorials. However, Windows 10 is suggested for better Compatibility with Grasshopper. 
+- Operating System: You can use Mac or Windows 10 operating systems for most of the tutorials. However, Windows 10 is suggested for better compatibility with Grasshopper. 
 - [Docker desktop](https://www.docker.com/products/docker-desktop)
 - [Visual Studio Code](https://code.visualstudio.com/)
     - [Docker extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) for Visual Studio Code
 - [Rhinoceros](https://www.rhino3d.com/download/) and [Grasshopper 3D](https://www.grasshopper3d.com/)
     - [GhPython](https://www.food4rhino.com/en/app/ghpython)
+    - [Bengesht](https://www.food4rhino.com/en/app/bengesht)
 - [Anaconda](https://www.anaconda.com/)
 - [Compas Fab](https://gramaziokohler.github.io/compas_fab/latest/getting_started.html)
 
