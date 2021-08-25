@@ -16,7 +16,7 @@ This repository contains tutorials integration of [ROS](https://www.ros.org/) (R
     - [Bengesht](https://www.food4rhino.com/en/app/bengesht)
 - [Anaconda](https://www.anaconda.com/)
 - [Compas Fab](https://gramaziokohler.github.io/compas_fab/latest/getting_started.html)
-
+    - [Compas Fab for Rhino/Gh](https://gramaziokohler.github.io/compas_fab/latest/getting_started.html#working-in-rhino-1)
 
 # Installation
 - Install Docker Desktop

@@ -1,0 +1,45 @@
+version: '2.1'
+
+services:
+  ros-master:
+    image: gramaziokohler/ros-base:20.11
+    ports:
+      - "11311:11311"
+    command: stdbuf -o L roscore
+    restart: always
+
+  publisher:
+    image: gramaziokohler/ros-base:20.11
+    depends_on:
+      - ros-master
+    environment:
+      - "ROS_MASTER_URI=http://ros-master:11311"
+      - "ROS_HOSTNAME=publisher"
+    command: rostopic pub /chatter std_msgs/String "hello" -r 0.1
+    restart: always
+
+  subscriber:
+    image: gramaziokohler/ros-base:20.11
+    depends_on:
+      - ros-master
+    environment:
+      - "ROS_MASTER_URI=http://ros-master:11311"
+      - "ROS_HOSTNAME=subscriber"
+    command: rostopic echo /chatter
+    restart: always
+
+  ros-bridge:
+    image: gramaziokohler/ros-base:20.11
+    container_name: ros-bridge
+    environment:
+      - "ROS_HOSTNAME=ros-bridge"
+      - "ROS_MASTER_URI=http://ros-master:11311"
+    ports:
+      - "9090:9090"
+    depends_on:
+      - ros-master
+    command:
+      - roslaunch
+      - --wait
+      - rosbridge_server
+      - rosbridge_websocket.launch
