@@ -122,39 +122,39 @@ Here is an overview of all three terminals running together:
 Now that you have an appreciation for PublisherSubscriber in ROS example manually, lets try and automate it using docker-compose.
 Create a yaml file named docker-compose.yml in the same directory and paste the following inside:
 ```
-version: '3.4'
+version: '2'
 
 networks:
   ros:
     driver: bridge
 
 services:
-  ros_melodic:
-    image: ros_melodic
-    build:
-      context: .
-      dockerfile: ./Dockerfile
-  
   ros-master:
-    image: ros_melodic
-    command: roscore
-    networks: 
+    image: ros_melodic:base
+    command: stdbuf -o L roscore
+    networks:
       - ros
     restart: always
 
   publisher:
-    image: ros_melodic
+    image: ros_melodic:base
     depends_on:
       - ros-master
+    environment:
+      - "ROS_MASTER_URI=http://ros-master:11311"
+      - "ROS_HOSTNAME=publisher"
     command: rostopic pub /chatter std_msgs/String "hello" -r 1
     networks:
       - ros
     restart: always
 
   subscriber:
-    image: ros_melodic
+    image: ros_melodic:base
     depends_on:
       - ros-master
+    environment:
+      - "ROS_MASTER_URI=http://ros-master:11311"
+      - "ROS_HOSTNAME=subscriber"
     command: rostopic echo /chatter
     networks:
       - ros
