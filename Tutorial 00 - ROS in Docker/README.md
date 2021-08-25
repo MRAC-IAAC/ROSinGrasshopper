@@ -39,17 +39,16 @@ RUN apt-get update
 
 ## Running the ROS container from terminal
 - In visual studio code, on the left bar, select Docker extention
-
-![docker_extention](./media/docker_extention.png)
-
-- From you IMAGES tab, select the newly created image `rosingrasshopper` and select the version which you created `base`
+- From your IMAGES tab, select the newly created image `rosingrasshopper` and select the version which you created `base`
     - Right click and select "Run Interactive"
-    
+
     ![run_interactive](./media/run_interactive.png)
 
 - You can see your container running in the terminal. 
 now you can try to run ROS using:
     - roscore
+
+    ![roscore](./media/roscore.png)
 
 # Additional Resources
  [List of available ROS images on Docker](https://registry.hub.docker.com/_/ros/)
