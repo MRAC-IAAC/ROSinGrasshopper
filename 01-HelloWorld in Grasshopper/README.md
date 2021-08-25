@@ -125,6 +125,7 @@ with RosClient() as client:
 You can note that the connected clients in VSCode terminal shows the connection to the Docker client as well.
 
 Here is the overall code:
+
 ![grasshopper](media/CompasFab.png)
 
 # Additional Resources
