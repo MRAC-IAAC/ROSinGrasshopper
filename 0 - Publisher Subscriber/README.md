@@ -54,7 +54,8 @@ RUN apt-get update && \
 - In VSCode, on the left bar, select Docker extention
 - From your IMAGES tab, select the newly created image `ros_melodic` and select the version which you created `base`
 Right click and select "Run Interactive"
-![run_interactive](./media/run_interactive.png)
+
+    ![run_interactive](./media/run_interactive.png)
 
 - You can see your container running in the terminal. 
 now you can try to run ROS using:
