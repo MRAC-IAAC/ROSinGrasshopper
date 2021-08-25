@@ -57,6 +57,8 @@ Right click and select "Run Interactive"
 
     ![run_interactive](./media/run_interactive.png)
 
+**Terminal 1**
+
 - You can see your container running in the terminal. 
 now you can try to run ROS using:
 ```
@@ -66,6 +68,8 @@ roscore
 
 ## Subscriber and Publisher example
 Now that we have the `roscore` running, we can run two other containers for a [subscriber and publisher example](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29).
+
+**Terminal 2**
 
 Open a new terminal in VSCode and list the running containers:
 ```
@@ -85,6 +89,8 @@ To start publishing a message try:
 ```
 rostopic pub /chatter std_msgs/String "hello" -r 1
 ```
+
+**Terminal 3**
 
 Open the third terminal to run the subscriber:
 
@@ -112,7 +118,7 @@ Here is an overview of all three terminals running together:
 ![terminals](./media/terminals.png)
 
 
-***
+
 # Additional Resources
  - [List of available ROS images on Docker](https://registry.hub.docker.com/_/ros/)
  - [Docker compose | ROS](http://wiki.ros.org/docker/Tutorials/Compose)
