@@ -5,30 +5,21 @@ networks:
     driver: bridge
 
 services:
-  roboticmosaic:
-    image: roboticmosaic
+  rosingrasshopper:
+    image: rosingrasshopper
     build:
       context: .
       dockerfile: ./Dockerfile
   
   ros-master:
-    image: roboticmosaic
+    image: rosingrasshopper
     command: roscore
     networks: 
       - ros
     restart: always
 
-  ros-bridge-server:
-    image: roboticmosaic
-    depends_on: 
-      - ros-master
-    command: roslaunch rosbridge_server rosbridge_websocket.launch
-    networks: 
-      - ros
-    restart: always
-
   talker:
-    image: roboticmosaic
+    image: rosingrasshopper
     depends_on:
       - ros-master
     command: rostopic pub /chatter std_msgs/String "hello" -r 1
@@ -37,10 +28,19 @@ services:
     restart: always
 
   listener:
-    image: roboticmosaic
+    image: rosingrasshopper
     depends_on:
       - ros-master
     command: rostopic echo /chatter
     networks:
+      - ros
+    restart: always
+
+  ros-bridge-server:
+    image: rosingrasshopper
+    depends_on: 
+      - ros-master
+    command: roslaunch rosbridge_server rosbridge_websocket.launch
+    networks: 
       - ros
     restart: always
