@@ -14,10 +14,10 @@ The specific commands you can use in a dockerfile are:
 
 FROM, PULL, RUN, and CMD
 ```
-- FROM - Creates a layer from the ubuntu:18.04
-- PULL - Adds files from your Docker repository
-- RUN - Builds your container
-- CMD - Specifies what command to run within the container
+FROM - Creates a layer from the ubuntu:18.04
+PULL - Adds files from your Docker repository
+RUN - Builds your container
+CMD - Specifies what command to run within the container
 ```
 
 Below is a minimal example of the dockerfile to build a ROS Melodic image
