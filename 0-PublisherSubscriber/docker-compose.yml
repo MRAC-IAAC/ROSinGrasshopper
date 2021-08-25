@@ -18,7 +18,7 @@ services:
       - ros
     restart: always
 
-  talker:
+  publisher:
     image: ros_melodic
     depends_on:
       - ros-master
@@ -27,7 +27,7 @@ services:
       - ros
     restart: always
 
-  listener:
+  subscriber:
     image: ros_melodic
     depends_on:
       - ros-master

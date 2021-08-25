@@ -14,7 +14,7 @@ The specific commands you can use in a dockerfile are:
 
 FROM, PULL, RUN, and CMD
 ```
-FROM - Creates a layer from the ubuntu:18.04
+FROM - Creates the base layer for your image (for ex. ubuntu:18.04)
 PULL - Adds files from your Docker repository
 RUN - Builds your container
 CMD - Specifies what command to run within the container
@@ -36,7 +36,7 @@ RUN apt-get update && \
     apt-get install -y ros-melodic-common-tutorials
 ```
 
-## Building your first "image" using Dockerfile
+## Building our first "image" using Dockerfile
 - Make sure your Docker Desktop software is running
 - Open the folder where you have the Dockerfile in VSCode
 - Press Ctrl(or Cmd) + Shift + P
@@ -118,9 +118,55 @@ Here is an overview of all three terminals running together:
 ![terminals](./media/terminals.png)
 
 
+## Docker Compose
+Now that you have an appreciation for PublisherSubscriber in ROS example manually, lets try and automate it using docker-compose.
+Create a yaml file named docker-compose.yml in the same directory and paste the following inside:
+```
+version: '3.4'
+
+networks:
+  ros:
+    driver: bridge
+
+services:
+  ros_melodic:
+    image: ros_melodic
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+  
+  ros-master:
+    image: ros_melodic
+    command: roscore
+    networks: 
+      - ros
+    restart: always
+
+  publisher:
+    image: ros_melodic
+    depends_on:
+      - ros-master
+    command: rostopic pub /chatter std_msgs/String "hello" -r 1
+    networks:
+      - ros
+    restart: always
+
+  subscriber:
+    image: ros_melodic
+    depends_on:
+      - ros-master
+    command: rostopic echo /chatter
+    networks:
+      - ros
+    restart: always
+
+```
+Right click on the docker-compose.yml file from your explorer menu in VSCode. and select `Compose Up`
+
 
 # Additional Resources
- - [List of available ROS images on Docker](https://registry.hub.docker.com/_/ros/)
- - [Docker compose | ROS](http://wiki.ros.org/docker/Tutorials/Compose)
- - [ROS Publisher-Subscriber example](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29)
+- [List of available ROS images on Docker](https://registry.hub.docker.com/_/ros/)
+- [Docker compose | ROS](http://wiki.ros.org/docker/Tutorials/Compose)
+- [ROS Publisher-Subscriber example](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29)
 - [ROS Apps Deployment](https://github.com/themousepotato/ROSAppsDeployment)
+- [Docker Compose 'Getting Started'](https://docs.docker.com/compose/gettingstarted/)
