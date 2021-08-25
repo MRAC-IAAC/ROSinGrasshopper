@@ -81,12 +81,14 @@ docker-compose up
 We will keep this running in the background.
 
 ## Grasshopper Subscriber
+
 Now let's move to the grasshopper side.
 We need to have Compas Fab for rhino and grasshopper installed. as well as, GhPython plugin for Grasshopper.
 
 We will use GhPython to write some simple Python scripts in grasshopper which use compas_fab library in Python.
 
 **Client Connection**
+
 First we create a component to connect to the ROS Bridge Server from Grasshopper.
 in GhPython:
 
@@ -108,19 +110,14 @@ elif connect is False:
 Then we create another component which subscribes to the `/chatter` topic and prints the output.
 
 ```
-import time
-
 from roslibpy import Topic
 from compas_fab.backends import RosClient
-
 
 def receive_message(message):
     print('Heard talking: ' + message['data'])
 
-
 with RosClient() as client:
     listener = Topic(client, /chatter, 'std_msgs/String')
-
 
     if read and client.is_connected:
         listener.subscribe(receive_message)
@@ -129,3 +126,9 @@ You can note that the connected clients in VSCode terminal shows the connection 
 
 Here is the overall code:
 ![grasshopper](media/CompasFab.png)
+
+# Additional Resources
+- [Compas Fab Working in Rhino](https://gramaziokohler.github.io/compas_fab/latest/getting_started.html#working-in-rhino-1)
+- [ROS Bridge Suite](https://wiki.ros.org/rosbridge_suite)
+- [ROS in Compas Fab](https://gramaziokohler.github.io/compas_fab/latest/backends/ros.html#ros-backend)
+- [Compas Fab PublisherSubscriber example](https://gramaziokohler.github.io/compas_fab/latest/examples/03_backends_ros/01_ros_examples.html)
