@@ -30,7 +30,7 @@ This repository contains tutorials integration of [ROS](https://www.ros.org/) (R
 
 Each tutorial is documented separately inside their respective folders.
 
-## Acknowledges 
+# Acknowledges 
 <!-- 
     ROSIN acknowledgement from the ROSIN press kit
     @ https://github.com/rosin-project/press_kit
