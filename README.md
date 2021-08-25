@@ -23,13 +23,13 @@ This repository contains tutorials integration of [ROS](https://www.ros.org/) (R
 - [Install Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
 - [Install Docker extention for Visual Studio Code](https://code.visualstudio.com/docs/editor/extension-marketplace)
 - Install Rhino and Grasshopper
-- [Install GHPython and Bengesht Plugins for Grasshopper](https://parametricbydesign.com/grasshopper/tutorials/installing-grasshopper-and-plugins/#2-install-by-copying-into-the-components-folder)
+- [Install GhPython and Bengesht Plugins for Grasshopper](https://parametricbydesign.com/grasshopper/tutorials/installing-grasshopper-and-plugins/#2-install-by-copying-into-the-components-folder)
 - Install Anaconda
 - [Install Compas_Fab](https://gramaziokohler.github.io/compas_fab/latest/getting_started.html#install-with-conda-1)
 
 # Usage
 
-Each tutorial is documented separately inside their respective folders.
+Each tutorial is described separately inside their respective folders.
 
 # Acknowledges 
 <!-- 
