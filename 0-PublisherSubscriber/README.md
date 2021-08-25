@@ -123,4 +123,4 @@ Here is an overview of all three terminals running together:
  - [List of available ROS images on Docker](https://registry.hub.docker.com/_/ros/)
  - [Docker compose | ROS](http://wiki.ros.org/docker/Tutorials/Compose)
  - [ROS Publisher-Subscriber example](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29)
-
+- [ROS Apps Deployment](https://github.com/themousepotato/ROSAppsDeployment)
