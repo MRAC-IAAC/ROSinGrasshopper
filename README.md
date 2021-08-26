@@ -24,14 +24,15 @@ context. Focusing on dynamic processes in which the robot interacts with continu
 in a comparably unconstrained system that cannot
 be automatically solved.
 
+![artOfConnectity](00-HelloWorld%20in%20Docker/media/ArtOfConnectivity.jpg)
+
 >["An Art of Connectivity"](https://www.researchgate.net/publication/307996374_An_Art_of_Connectivity): Tristan Gobin, Sebastian Andraos, Thibault Schwartz of HAL robotics.
->![artOfConnectity](00-HelloWorld%20in%20Docker/media/ArtOfConnectivity.jpg)
 
 ## How does ROS work with Docker?
 
 **Dockerfile** uses our recipe for the image we want to create and creates an [ubuntu] image. 
 Here we can use the ROS version we want to use, which packages we want to install, etc.
->![dockerfile](00-HelloWorld%20in%20Docker/media/Dockerfile.jpg)
+![dockerfile](00-HelloWorld%20in%20Docker/media/Dockerfile.jpg)
 
 
 # Requirements
