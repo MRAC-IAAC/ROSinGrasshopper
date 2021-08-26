@@ -47,7 +47,7 @@ RUN apt-get update && \
 - Enter a name for the image with this structure:
 - name:tag
 ```
-- for ex >> ros_melodic_:base
+for ex >> ros_melodic:base
 ```
 
 ## Running the ROS container from terminal
