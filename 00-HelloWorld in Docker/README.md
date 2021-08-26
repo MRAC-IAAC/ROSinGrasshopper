@@ -10,7 +10,7 @@ There are two main files used to install an image and run docker containers.
 ## Dockerfile
 Dockerfile consists of specific commands that guide you on how to build a specific Docker image. 
 
-The specific commands you can use in a dockerfile are:
+Some of the commands you can use in a dockerfile are:
 
 FROM, PULL, RUN, and CMD
 ```
