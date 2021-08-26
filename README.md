@@ -1,8 +1,36 @@
 # ROSinGrasshopper
-Collection of Tutorials for integrating ROS in grasshopper3d; based on docker, compas_fab, bengesht, etc.
+Collection of Tutorials for integrating [ROS](https://www.ros.org/) in [grasshopper3d ](https://www.grasshopper3d.com/); based on [docker](https://www.docker.com/), [compas fab](https://gramaziokohler.github.io/compas_fab/latest/overview.html), [bengesht](https://www.food4rhino.com/en/app/bengesht), etc.
 
+These methods facilitates design to robotic production workflows as well as real-time and adaptive robotic fabrication workflows.
+ 
+## Why Real-time feedback for Robotic Fabrication?
+>
+>According to [Association for Robots in Architecture](https://www.robotsinarchitecture.org/wp-content/uploads/2011/09/realtimerobot_ecaade2012_100.content.pdf):
+>
+>Industrial robotic applications usually deal with a
+fabrication problem in such a way that a problem is
+defined, a solution programmed and the resulting
+control data file executed at the robot. Interaction
+within this process is not necessary because the design is usually finished at the point when robot code
+is generated.
+>
+> We therefore argue that robotic arms
+have not yet been used to their full capabilities in industry applications, as they are never linked directly
+to a design process.
+>
+>In our research we focus on *intuitive robot control* and *intuitive simulation* for a bottom up design
+process. To develop fluent *action and reaction*
+scenarios for industrial robots in an architectural
+context we focus on dynamic processes in which the robot interacts with continuously changing data, resulting
+in a comparably unconstrained system that cannot
+be automatically solved.
 
-This repository contains tutorials integration of [ROS](https://www.ros.org/) (Robotic Operating System) as a backend software for [Grasshopper3D ](https://www.grasshopper3d.com/)(Algorithmic modeling tool for Rhinoceros). These methods facilitates design to robotic production workflows as well as real-time and adaptive robotic fabrication workflows.
+![artOfConnectity](00-HelloWorld%20in%20Docker/media/ArtOfConnectivity.jpg)
+
+######
+["An Art of Connectivity"](https://www.researchgate.net/publication/307996374_An_Art_of_Connectivity): Tristan Gobin, Sebastian Andraos, Thibault Schwartz of HAL robotics.
+######
+
 
 
 # Requirements
