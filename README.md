@@ -20,7 +20,7 @@ to a design process.
 >In our research we focus on *intuitive robot control* and *intuitive simulation* for a bottom up design
 process. To develop fluent *action and reaction*
 scenarios for industrial robots in an architectural
-context we focus on dynamic processes in which the robot interacts with continuously changing data, resulting
+context. Focusing on dynamic processes in which the robot interacts with continuously changing data, resulting
 in a comparably unconstrained system that cannot
 be automatically solved.
 
