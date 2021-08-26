@@ -8,7 +8,7 @@ The following tutorial extends the previous [HelloWorld](https://github.com/MRAC
 # COMPAS FAB
 
 ## Update Docker-Compose 
-First we start by updating the previous [docker-compose] from our previous excersie using few modifications:
+First we start by updating the previous `docker-compose` from our previous excersie using few modifications:
 
 **Base Image**
 
