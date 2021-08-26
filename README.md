@@ -35,7 +35,7 @@ Here we can choose the ROS version we want to use, which packages we want to ins
 
 ![dockerfile](00-HelloWorld%20in%20Docker/media/Dockerfile.jpg)
 
-**Docker-Compose** is used to run custom/different applications from our image.
+**Docker-Compose** is used to run custom/different applications from our image. By defining which ROS nodes we like to run together.
 
 ![docker-compose](00-HelloWorld%20in%20Docker/media/docker-compose.jpg)
 
