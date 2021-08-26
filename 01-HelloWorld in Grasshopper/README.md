@@ -144,4 +144,4 @@ Here is how the code looks like:
 - [ROS Bridge Suite](https://wiki.ros.org/rosbridge_suite)
 - [ROS in Compas Fab](https://gramaziokohler.github.io/compas_fab/latest/backends/ros.html#ros-backend)
 - [Compas Fab PublisherSubscriber example](https://gramaziokohler.github.io/compas_fab/latest/examples/03_backends_ros/01_ros_examples.html)
-- [Bengesht + ROS>GH Demo](https://vimeo.com/159845598)
+- [Bengesht + ROS.GH Demo](https://vimeo.com/159845598)
