@@ -40,13 +40,11 @@ Here we can choose the ROS version we want to use, which packages we want to ins
 - Operating System: You can use Mac or Windows 10 operating systems for most of the tutorials. However, Windows 10 is suggested for better compatibility with Grasshopper. 
 - [Docker desktop](https://www.docker.com/products/docker-desktop)
 - [Visual Studio Code](https://code.visualstudio.com/)
-    - [Docker extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) for Visual Studio Code
 - [Rhinoceros](https://www.rhino3d.com/download/) and [Grasshopper 3D](https://www.grasshopper3d.com/)
     - [GhPython](https://www.food4rhino.com/en/app/ghpython)
     - [Bengesht](https://www.food4rhino.com/en/app/bengesht)
 - [Anaconda](https://www.anaconda.com/)
-- [Compas Fab](https://gramaziokohler.github.io/compas_fab/latest/getting_started.html)
-    - [Compas Fab for Rhino/Gh](https://gramaziokohler.github.io/compas_fab/latest/getting_started.html#working-in-rhino-1)
+
 
 # Installation
 - Install Docker Desktop
@@ -56,7 +54,7 @@ Here we can choose the ROS version we want to use, which packages we want to ins
 - [Install GhPython and Bengesht Plugins for Grasshopper](https://parametricbydesign.com/grasshopper/tutorials/installing-grasshopper-and-plugins/#2-install-by-copying-into-the-components-folder)
 - Install Anaconda
 - [Install Compas_Fab](https://gramaziokohler.github.io/compas_fab/latest/getting_started.html#install-with-conda-1)
-
+- [Install Compas Fab for Rhino/Gh](https://gramaziokohler.github.io/compas_fab/latest/getting_started.html#working-in-rhino-1)
 # Usage
 
 Each tutorial is described separately inside their respective folders.
