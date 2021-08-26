@@ -28,7 +28,7 @@ be automatically solved.
 
 >["An Art of Connectivity"](https://www.researchgate.net/publication/307996374_An_Art_of_Connectivity): Tristan Gobin, Sebastian Andraos, Thibault Schwartz of HAL robotics.
 
-## How do I use ROS work with Docker?
+## How do I use ROS with Docker?
 
 **Dockerfile** uses our recipe for the image we want to create and creates an [ubuntu] image. 
 Here we can choose the ROS version we want to use, which packages we want to install, etc.
