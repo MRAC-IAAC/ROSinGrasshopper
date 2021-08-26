@@ -8,7 +8,7 @@ The following tutorial extends the previous [HelloWorld](https://github.com/MRAC
 # COMPAS FAB
 
 ## Update Docker-Compose 
-First we start by updating the previous `docker-compose` [file](https://github.com/MRAC-IAAC/ROSinGrasshopper/blob/main/00-HelloWorld%20in%20Docker/docker-compose.yml) from our previous excersie using few modifications:
+First we start by updating the previous `[docker-compose](https://github.com/MRAC-IAAC/ROSinGrasshopper/blob/main/00-HelloWorld%20in%20Docker/docker-compose.yml)` from our previous excersie using few modifications:
 
 **Base Image**
 
