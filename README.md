@@ -13,11 +13,9 @@ defined, a solution programmed and the resulting
 control data file executed at the robot. Interaction
 within this process is not necessary because the design is usually finished at the point when robot code
 is generated.
->
 > We therefore argue that robotic arms
 have not yet been used to their full capabilities in industry applications, as they are never linked directly
 to a design process.
->
 >In our research we focus on *intuitive robot control* and *intuitive simulation* for a bottom up design
 process. To develop fluent *action and reaction*
 scenarios for industrial robots in an architectural
@@ -27,9 +25,9 @@ be automatically solved.
 
 ![artOfConnectity](00-HelloWorld%20in%20Docker/media/ArtOfConnectivity.jpg)
 
-######
-["An Art of Connectivity"](https://www.researchgate.net/publication/307996374_An_Art_of_Connectivity): Tristan Gobin, Sebastian Andraos, Thibault Schwartz of HAL robotics.
-######
+
+>["An Art of Connectivity"](https://www.researchgate.net/publication/307996374_An_Art_of_Connectivity): Tristan Gobin, Sebastian Andraos, Thibault Schwartz of HAL robotics.
+
 
 
 
