@@ -115,6 +115,7 @@ rostopic echo /chatter
 ```
 
 Here is an overview of all three terminals running together:
+
 ![terminals](./media/terminals.png)
 
 
