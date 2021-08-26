@@ -15,7 +15,7 @@ services:
     environment:
       - "ROS_MASTER_URI=http://ros-master:11311"
       - "ROS_HOSTNAME=publisher"
-    command: rostopic pub /chatter std_msgs/String "hello" -r 0.1
+    command: rostopic pub /chatter std_msgs/String "hello" -r 1
     restart: always
 
   subscriber:

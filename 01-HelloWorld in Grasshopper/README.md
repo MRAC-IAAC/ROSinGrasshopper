@@ -80,7 +80,7 @@ docker-compose up
 
 We will keep this running in the background.
 
-## Grasshopper Subscriber
+## Grasshopper Subscriber using Compas Fab
 
 Now let's move to the grasshopper side.
 We need to have Compas Fab for rhino and grasshopper installed. as well as, GhPython plugin for Grasshopper.
@@ -128,8 +128,20 @@ Here is the overall code:
 
 ![grasshopper](media/CompasFab.png)
 
+
+## Grasshopper Subscriber using Bengesht
+Alternative to Compas fab, we can use Bengesht + ROS.GH plugins in grasshopper to communicate with ROS Bridge Server.
+
+>Our docker container is running on the localhost, therefore we can use this ip for the Bengesht client:
+>
+>ws://localhost:9090/
+
+Here is how the code looks like:
+![grasshopper](media/bengesht.png)
+
 # Additional Resources
 - [Compas Fab Working in Rhino](https://gramaziokohler.github.io/compas_fab/latest/getting_started.html#working-in-rhino-1)
 - [ROS Bridge Suite](https://wiki.ros.org/rosbridge_suite)
 - [ROS in Compas Fab](https://gramaziokohler.github.io/compas_fab/latest/backends/ros.html#ros-backend)
 - [Compas Fab PublisherSubscriber example](https://gramaziokohler.github.io/compas_fab/latest/examples/03_backends_ros/01_ros_examples.html)
+- [Bengesht + ROS>GH Demo](https://vimeo.com/159845598)
