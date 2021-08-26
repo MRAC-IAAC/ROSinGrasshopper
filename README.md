@@ -49,12 +49,12 @@ Here we can choose the ROS version we want to use, which packages we want to ins
 # Installation
 - Install Docker Desktop
 - [Install Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
-- [Install Docker extention for Visual Studio Code](https://code.visualstudio.com/docs/editor/extension-marketplace)
+  - [Install Docker extention for Visual Studio Code](https://code.visualstudio.com/docs/editor/extension-marketplace)
 - Install Rhino and Grasshopper
-- [Install GhPython and Bengesht Plugins for Grasshopper](https://parametricbydesign.com/grasshopper/tutorials/installing-grasshopper-and-plugins/#2-install-by-copying-into-the-components-folder)
+  - [Install GhPython and Bengesht Plugins for Grasshopper](https://parametricbydesign.com/grasshopper/tutorials/installing-grasshopper-and-plugins/#2-install-by-copying-into-the-components-folder)
 - Install Anaconda
-- [Install Compas_Fab](https://gramaziokohler.github.io/compas_fab/latest/getting_started.html#install-with-conda-1)
-- [Install Compas Fab for Rhino/Gh](https://gramaziokohler.github.io/compas_fab/latest/getting_started.html#working-in-rhino-1)
+  - [Install Compas_Fab](https://gramaziokohler.github.io/compas_fab/latest/getting_started.html#install-with-conda-1)
+  - [Install Compas Fab for Rhino/Gh](https://gramaziokohler.github.io/compas_fab/latest/getting_started.html#working-in-rhino-1)
 # Usage
 
 Each tutorial is described separately inside their respective folders.
