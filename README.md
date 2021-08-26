@@ -17,7 +17,6 @@ is generated.
 > We therefore argue that robotic arms
 have not yet been used to their full capabilities in industry applications, as they are never linked directly
 to a design process.
->
 >In our research we focus on *intuitive robot control* and *intuitive simulation* for a bottom up design
 process. To develop fluent *action and reaction*
 scenarios for industrial robots in an architectural
