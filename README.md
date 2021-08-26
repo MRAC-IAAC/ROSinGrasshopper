@@ -3,7 +3,7 @@ Collection of Tutorials for integrating [ROS](https://www.ros.org/) in [grasshop
 
 These methods facilitates design to robotic production workflows as well as real-time and adaptive robotic fabrication workflows.
  
-## Why Real-time feedback for Robotic Fabrication?
+## What is Real-time feedback for Robotic Fabrication?
 >
 >According to [Association for Robots in Architecture](https://www.robotsinarchitecture.org/wp-content/uploads/2011/09/realtimerobot_ecaade2012_100.content.pdf):
 >
@@ -28,12 +28,16 @@ be automatically solved.
 
 >["An Art of Connectivity"](https://www.researchgate.net/publication/307996374_An_Art_of_Connectivity): Tristan Gobin, Sebastian Andraos, Thibault Schwartz of HAL robotics.
 
-## How does ROS work with Docker?
+## How do I use ROS work with Docker?
 
 **Dockerfile** uses our recipe for the image we want to create and creates an [ubuntu] image. 
 Here we can choose the ROS version we want to use, which packages we want to install, etc.
+
 ![dockerfile](00-HelloWorld%20in%20Docker/media/Dockerfile.jpg)
 
+**Docker-Compose** is used to run custom/different applications from our image.
+
+![docker-compose](00-HelloWorld%20in%20Docker/media/docker-compose.jpg)
 
 # Requirements
 
