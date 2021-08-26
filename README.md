@@ -28,8 +28,9 @@ be automatically solved.
 >["An Art of Connectivity"](https://www.researchgate.net/publication/307996374_An_Art_of_Connectivity): Tristan Gobin, Sebastian Andraos, Thibault Schwartz of HAL robotics.
 >![artOfConnectity](00-HelloWorld%20in%20Docker/media/ArtOfConnectivity.jpg)
 
-## What is ROS and Docker?
+## How does ROS work with Docker?
 
+>![dockerfile](00-HelloWorld%20in%20Docker/media/Dockerfile.jpg)
 
 
 # Requirements
