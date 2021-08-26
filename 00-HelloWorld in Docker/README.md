@@ -10,7 +10,7 @@ There are two main files used to install an image and run docker containers.
 ## Dockerfile
 Dockerfile consists of specific commands that guide you on how to build a specific Docker image. 
 
-The specific commands you can use in a dockerfile are:
+Some of the commands you can use in a dockerfile are:
 
 FROM, PULL, RUN, and CMD
 ```
@@ -47,7 +47,7 @@ RUN apt-get update && \
 - Enter a name for the image with this structure:
 - name:tag
 ```
-- for ex >> ros_melodic_:base
+for ex >> ros_melodic:base
 ```
 
 ## Running the ROS container from terminal
@@ -115,6 +115,7 @@ rostopic echo /chatter
 ```
 
 Here is an overview of all three terminals running together:
+
 ![terminals](./media/terminals.png)
 
 
