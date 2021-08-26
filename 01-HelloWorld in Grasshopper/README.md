@@ -124,7 +124,7 @@ with RosClient() as client:
 ```
 You can note that the connected clients in VSCode terminal shows the connection to the Docker client as well.
 
-Here is the overall code:
+Here is the overall [code](https://github.com/MRAC-IAAC/ROSinGrasshopper/raw/main/01-HelloWorld%20in%20Grasshopper/Subscriber_CompasFab.gh):
 
 ![grasshopper](media/CompasFab.png)
 
@@ -136,7 +136,7 @@ Alternative to Compas fab, we can use Bengesht + ROS.GH plugins in grasshopper t
 >
 >ws://localhost:9090/
 
-Here is how the code looks like:
+Here is how the [code](https://github.com/MRAC-IAAC/ROSinGrasshopper/raw/main/01-HelloWorld%20in%20Grasshopper/Subscriber_Bengesht.gh) looks like:
 ![grasshopper](media/bengesht.png)
 
 # Additional Resources
