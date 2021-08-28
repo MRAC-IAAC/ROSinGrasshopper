@@ -80,9 +80,8 @@ More details: [in this link](https://iaac.net/rosin-new-robotic-setup/).
        alt="rosin_logo" height="60" >
 </a>
 
-![http://rosin-project.eu](http://rosin-project.eu/wp-content/uploads/rosin_ack_logo_wide.png)
-
 Supported by ROSIN - ROS-Industrial Quality-Assured Robot Software Components.  
 More information: [rosin-project.eu](http://rosin-project.eu)
 
-![eu flag](http://rosin-project.eu/wp-content/uploads/rosin_eu_flag.jpg)
+<img src="http://rosin-project.eu/wp-content/uploads/rosin_eu_flag.jpg" 
+     alt="eu_flag" height="45" align="left" >  
