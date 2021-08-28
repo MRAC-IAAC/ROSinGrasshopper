@@ -8,7 +8,7 @@ The following tutorial extends the previous [HelloWorld](https://github.com/MRAC
 # COMPAS FAB
 
 ## Update Docker-Compose 
-First we start by updating the previous `docker-compose` [file](https://github.com/MRAC-IAAC/ROSinGrasshopper/blob/main/00-HelloWorld%20in%20Docker/docker-compose.yml) from our previous excersie using few modifications:
+First we start by updating the previous `docker-compose` from our previous excersie using few modifications:
 
 **Base Image**
 
@@ -71,7 +71,7 @@ services:
       - rosbridge_websocket.launch
 ```
 
-The `docker-compose` file is ready to run. We can test this using:
+The `docker-compose` [file](https://github.com/MRAC-IAAC/ROSinGrasshopper/blob/main/01-HelloWorld%20in%20Grasshopper/docker-compose.yml) is ready to run. We can test this using:
 ```
 docker-compose up
 ```
@@ -124,7 +124,7 @@ with RosClient() as client:
 ```
 You can note that the connected clients in VSCode terminal shows the connection to the Docker client as well.
 
-Here is the overall code:
+Here is the overall [code](https://github.com/MRAC-IAAC/ROSinGrasshopper/raw/main/01-HelloWorld%20in%20Grasshopper/Subscriber_CompasFab.gh):
 
 ![grasshopper](media/CompasFab.png)
 
@@ -136,7 +136,7 @@ Alternative to Compas fab, we can use Bengesht + ROS.GH plugins in grasshopper t
 >
 >ws://localhost:9090/
 
-Here is how the code looks like:
+Here is how the [code](https://github.com/MRAC-IAAC/ROSinGrasshopper/raw/main/01-HelloWorld%20in%20Grasshopper/Subscriber_Bengesht.gh) looks like:
 ![grasshopper](media/bengesht.png)
 
 # Additional Resources
