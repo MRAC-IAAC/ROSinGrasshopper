@@ -17,8 +17,8 @@ services:
     depends_on:
       - ros-master
     environment:
-      - "ROS_MASTER_URI=http://ros-master:11311"
-      - "ROS_HOSTNAME=publisher"
+      - ROS_MASTER_URI=http://ros-master:11311
+      - ROS_HOSTNAME=publisher
     command: rostopic pub /chatter std_msgs/String "hello" -r 1
     networks:
       - ros
@@ -29,9 +29,10 @@ services:
     depends_on:
       - ros-master
     environment:
-      - "ROS_MASTER_URI=http://ros-master:11311"
-      - "ROS_HOSTNAME=subscriber"
-    command: rostopic echo /chatter
+      - ROS_MASTER_URI=http://ros-master:11311
+      - ROS_HOSTNAME=subscriber
+      - DISPLAY=localhost:0.0
+    command: rostopic echo /chatter 
     networks:
       - ros
     restart: always

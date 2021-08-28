@@ -1,8 +1,9 @@
 # ROSinGrasshopper
-Collection of Tutorials for integrating [ROS](https://www.ros.org/) in [grasshopper3d ](https://www.grasshopper3d.com/); based on [docker](https://www.docker.com/), [compas fab](https://gramaziokohler.github.io/compas_fab/latest/overview.html), [bengesht](https://www.food4rhino.com/en/app/bengesht), etc.
+
+Collection of Tutorials for integrating [ROS](https://www.ros.org/) in [grasshopper3d](https://www.grasshopper3d.com/); based on [docker](https://www.docker.com/), [compas fab](https://gramaziokohler.github.io/compas_fab/latest/overview.html), [bengesht](https://www.food4rhino.com/en/app/bengesht), etc.
 
 These methods facilitates design to robotic production workflows as well as real-time and adaptive robotic fabrication workflows.
- 
+
 ## What is Real-time feedback for Robotic Fabrication?
 >
 >According to [Association for Robots in Architecture](https://www.robotsinarchitecture.org/wp-content/uploads/2011/09/realtimerobot_ecaade2012_100.content.pdf):
@@ -39,19 +40,19 @@ Here we can choose the ROS version we want to use, which packages we want to ins
 
 ![docker-compose](00-HelloWorld%20in%20Docker/media/docker-compose.jpg)
 
-# Requirements
+## Requirements
 
 - Operating System: You can use Mac or Windows 10 operating systems for most of the tutorials. However, Windows 10 is suggested for better compatibility with Grasshopper. 
 - [Docker desktop](https://www.docker.com/products/docker-desktop)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Rhinoceros](https://www.rhino3d.com/download/) and [Grasshopper 3D](https://www.grasshopper3d.com/)
-    - [GhPython](https://www.food4rhino.com/en/app/ghpython)
-    - [Bengesht](https://www.food4rhino.com/en/app/bengesht)
-    - [ROS.GH](https://github.com/behrooz-tahanzadeh/ROS.GH)
+  - [GhPython](https://www.food4rhino.com/en/app/ghpython)
+  - [Bengesht](https://www.food4rhino.com/en/app/bengesht)
+  - [ROS.GH](https://github.com/behrooz-tahanzadeh/ROS.GH)
 - [Anaconda](https://www.anaconda.com/)
 
+## Installation
 
-# Installation
 - Install Docker Desktop
 - [Install Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
   - [Install Docker extention for Visual Studio Code](https://code.visualstudio.com/docs/editor/extension-marketplace)
@@ -60,25 +61,28 @@ Here we can choose the ROS version we want to use, which packages we want to ins
 - Install Anaconda
   - [Install Compas_Fab](https://gramaziokohler.github.io/compas_fab/latest/getting_started.html#install-with-conda-1)
   - [Install Compas Fab for Rhino/Gh](https://gramaziokohler.github.io/compas_fab/latest/getting_started.html#working-in-rhino-1)
-# Usage
+
+## Usage
 
 Each tutorial is described separately inside their respective folders.
 
-# Acknowledges 
+## Acknowledges
+
 <!-- 
     ROSIN acknowledgement from the ROSIN press kit
     @ https://github.com/rosin-project/press_kit
 -->
 
-More details: <a href="https://iaac.net/rosin-new-robotic-setup/"> in this link. </a>
+More details: [in this link](https://iaac.net/rosin-new-robotic-setup/).
 
 <a href="http://rosin-project.eu">
   <img src="http://rosin-project.eu/wp-content/uploads/rosin_ack_logo_wide.png" 
        alt="rosin_logo" height="60" >
 </a>
 
-Supported by ROSIN - ROS-Industrial Quality-Assured Robot Software Components.  
-More information: <a href="http://rosin-project.eu">rosin-project.eu</a>
+![http://rosin-project.eu](http://rosin-project.eu/wp-content/uploads/rosin_ack_logo_wide.png)
 
-<img src="http://rosin-project.eu/wp-content/uploads/rosin_eu_flag.jpg" 
-     alt="eu_flag" height="45" align="left" >  
+Supported by ROSIN - ROS-Industrial Quality-Assured Robot Software Components.  
+More information: [rosin-project.eu](http://rosin-project.eu)
+
+![eu flag](http://rosin-project.eu/wp-content/uploads/rosin_eu_flag.jpg)
