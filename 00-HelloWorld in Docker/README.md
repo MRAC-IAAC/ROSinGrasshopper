@@ -167,11 +167,14 @@ Right click on the docker-compose.yml file from your explorer menu in VSCode. an
 ![compose](./media/composeup.png)
 
 Alternatively you can try this in terminal:
-```
+
+```bash
 docker-compose up
 ```
+
 or to run in background:
-```
+
+```bash
 docker-compose up -d
 ```
 
@@ -182,19 +185,20 @@ Here is the output in terminal:
 As well you can review the log outputs for each service separately:
 In a new terminal from the folder containing docker-compose.yml, try:
 
-```
+```bash
 docker-compose logs subscriber
 ```
 
 ![compose_logs](./media/compose_logs.png)
 
 to shut-down your containers / ROS nodes, you can use:
-```
+
+```bash
 docker-compose down
 ```
 
+## Additional Resources
 
-# Additional Resources
 - [List of available ROS images on Docker](https://registry.hub.docker.com/_/ros/)
 - [Docker compose | ROS](http://wiki.ros.org/docker/Tutorials/Compose)
 - [ROS Publisher-Subscriber example](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29)

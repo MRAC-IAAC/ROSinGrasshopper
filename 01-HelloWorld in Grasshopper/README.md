@@ -1,29 +1,30 @@
+# Grasshopper and ROS communication
 
 The following tutorial extends the previous [HelloWorld](https://github.com/MRAC-IAAC/ROSinGrasshopper/tree/main/00-HelloWorld%20in%20Docker) tutorial in grasshopper environment using two methods:
+
 1. Compas Fab
 2. Bengesht
 
+## COMPAS FAB
 
+### Update Docker-Compose 
 
-# COMPAS FAB
-
-## Update Docker-Compose 
 First we start by updating the previous `docker-compose` from our previous excersie using few modifications:
 
-**Base Image**
+#### Base Image
 
 In this tutorial we use `gramaziokohler/ros-base:20.11` image instead of our previous `ros_melodic:base` image.
 We modify this for all our services.
 
-**ROS Bridge**
+#### ROS Bridge
 
 We add a new service called `ros-bridge` which provides ROS communication with Grasshopper through WebSockets. You can read more in [here](https://wiki.ros.org/rosbridge_suite).
 
-**Ports**
+#### Ports
 
 Additionaly we define the ports which we would like to expose from Docker. This is necessary to communicate with Docker from our host OS.
 
-```
+```yml
 version: '2.1'
 
 services:
@@ -72,11 +73,12 @@ services:
 ```
 
 The `docker-compose` [file](https://github.com/MRAC-IAAC/ROSinGrasshopper/blob/main/01-HelloWorld%20in%20Grasshopper/docker-compose.yml) is ready to run. We can test this using:
-```
+
+```bash
 docker-compose up
 ```
-![Terminal Output](media/first_try.png)
 
+![Terminal Output](media/first_try.png)
 
 We will keep this running in the background.
 
@@ -87,12 +89,12 @@ We need to have Compas Fab for rhino and grasshopper installed. as well as, GhPy
 
 We will use GhPython to write some simple Python scripts in grasshopper which use compas_fab library in Python.
 
-**Client Connection**
+### Client Connection
 
 First we create a component to connect to the ROS Bridge Server from Grasshopper.
 in GhPython:
 
-```
+```python
 from compas_fab.backends import RosClient
 
 client = RosClient()
@@ -105,11 +107,11 @@ elif connect is False:
     client.close()
 ```
 
-**Subscriber**
+### Subscriber
 
 Then we create another component which subscribes to the `/chatter` topic and prints the output.
 
-```
+```python
 from roslibpy import Topic
 from compas_fab.backends import RosClient
 
@@ -122,14 +124,15 @@ with RosClient() as client:
     if read and client.is_connected:
         listener.subscribe(receive_message)
 ```
+
 You can note that the connected clients in VSCode terminal shows the connection to the Docker client as well.
 
 Here is the overall [code](https://github.com/MRAC-IAAC/ROSinGrasshopper/raw/main/01-HelloWorld%20in%20Grasshopper/Subscriber_CompasFab.gh):
 
 ![grasshopper](media/CompasFab.png)
 
-
 ## Grasshopper Subscriber using Bengesht
+
 Alternative to Compas fab, we can use Bengesht + ROS.GH plugins in grasshopper to communicate with ROS Bridge Server.
 
 >Our docker container is running on the localhost, therefore we can use this ip for the Bengesht client:
@@ -139,7 +142,8 @@ Alternative to Compas fab, we can use Bengesht + ROS.GH plugins in grasshopper t
 Here is how the [code](https://github.com/MRAC-IAAC/ROSinGrasshopper/raw/main/01-HelloWorld%20in%20Grasshopper/Subscriber_Bengesht.gh) looks like:
 ![grasshopper](media/bengesht.png)
 
-# Additional Resources
+## Additional Resources
+
 - [Compas Fab Working in Rhino](https://gramaziokohler.github.io/compas_fab/latest/getting_started.html#working-in-rhino-1)
 - [ROS Bridge Suite](https://wiki.ros.org/rosbridge_suite)
 - [ROS in Compas Fab](https://gramaziokohler.github.io/compas_fab/latest/backends/ros.html#ros-backend)
