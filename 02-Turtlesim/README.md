@@ -96,3 +96,4 @@ docker-compose down --remove-orphans
 - [roslibpy: ROS Bridge library](https://roslibpy.readthedocs.io/en/latest/index.html)
 - [Creating ghpython sticky variables](https://developer.rhino3d.com/guides/rhinopython/ghpython-global-sticky/)
 - [Getting Started with Turtlesim](http://wiki.ros.org/turtlesim)
+- *grasshopper file requires [Human Plugin](https://www.food4rhino.com/en/app/human) for grasshopper.*
