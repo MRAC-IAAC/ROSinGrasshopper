@@ -1,0 +1,58 @@
+networks:
+  x11:
+
+services:
+  ros-master:
+    image: osrf/ros:melodic-desktop-full
+    container_name: ros-master
+    ports:
+      - "11311:11311"
+    command: stdbuf -o L roscore
+    restart: always
+    networks:
+      - x11
+
+  novnc:  
+    image: theasp/novnc:latest
+    environment: 
+      - DISPLAY_WIDTH=1400
+      - DISPLAY_HEIGHT=800
+    ports:
+      - "8080:8080"
+    networks:
+      - x11
+
+  turtlesim:
+    image: ros_melodic:turtlesim
+    environment: 
+      - ROS_MASTER_URI=http://ros-master:11311
+      - ROS_HOSTNAME=turtlesim
+      - DISPLAY=novnc:0.0
+    depends_on:
+      - novnc
+      - ros-master
+    command: 
+      - rosrun 
+      - turtlesim 
+      - turtlesim_node
+    restart: always
+    networks:
+      - x11
+      
+  ros-bridge:
+    image: gramaziokohler/ros-base:20.11
+    container_name: ros-bridge
+    environment:
+      - "ROS_HOSTNAME=ros-bridge"
+      - "ROS_MASTER_URI=http://ros-master:11311"
+    ports:
+      - "9090:9090"
+    depends_on:
+      - ros-master
+    command:
+      - roslaunch
+      - rosbridge_server
+      - rosbridge_websocket.launch
+    restart: always
+    networks:
+      - x11
