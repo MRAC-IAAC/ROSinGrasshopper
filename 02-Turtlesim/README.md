@@ -86,7 +86,7 @@ Use /clear service to clear the background.
 to shut-down your containers / ROS nodes, you can use:
 
 ```bash
-docker-compose down
+docker-compose down --remove-orphans
 ```
 
 ## Additional Resources
