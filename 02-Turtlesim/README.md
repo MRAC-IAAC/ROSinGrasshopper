@@ -31,11 +31,11 @@ ros_melodic:turtlesim
 
 To access gui of our containers, there are two main possible methods:
 
-#### - Visualization forwarding display
+#### Visualization forwarding display
 
 Visit [here](https://gramaziokohler.github.io/compas_fab/latest/backends/web_x11_gui.html#visualization-forwarding-display-1) for more info.
 
-#### - Visualization over web browser
+#### Visualization over web browser
   
 We use this method since it's the easiest option. The display of the container with graphical information (for example Rviz, Gazebo, etc.) is forwarded to another container that serves it over a web connection, making it available from your browser. The visualiser container we use is thanks to [theasp/novnc](https://hub.docker.com/r/theasp/novnc/).
 
