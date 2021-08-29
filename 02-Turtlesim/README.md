@@ -50,7 +50,7 @@ We will use 4 containers:
 
 In turtlesim container `DISPLAY` is exposed to your novnc container `DISPLAY=novnc:0.0`.
 
-## Running our ROS Nodes
+## Running ROS Nodes
 
 Run your ros nodes using `docker-compose`:
 
@@ -70,16 +70,18 @@ Open the grasshopper [file](Turtlesim.gh) to interact with the turtle in ROS.
 
 ### Moving the turtle using ROS Topics
 
-Use the /cmd_vel topic to send linear and angular command velocities for the turtle. For this we will create a publisher component using ghpython.
+Use the `/cmd_vel` topic to send linear and angular velocity commands for the turtle. For this we will create a publisher component using ghpython.
+Use rostopics to send the commands which you would need them to happen frequently.
 
 ![publisher](media/Publisher.jpg)
 
 ### Using ROS Services
 
-In addition to moving the turtle using cmd_vel publisher, we can access some other features of the enviornment using ROS Services.
+In addition to moving the turtle using `cmd_vel` publisher, we can access some other features of the enviornment using ROS Services.
 For example, to clean the background, to move the turtle to initial position, etc.
+Services are the commands we would like to send once in a while.
 
-Use `/clear` service to clear the background.
+Call the `/clear` service to clear the background.
 
 ![services](./media/ServiceCall.jpg)
 
