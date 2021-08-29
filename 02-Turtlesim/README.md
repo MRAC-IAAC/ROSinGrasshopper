@@ -83,6 +83,12 @@ Use /clear service to clear the background.
 
 ![services](./media/ServiceCall.jpg)
 
+to shut-down your containers / ROS nodes, you can use:
+
+```bash
+docker-compose down
+```
+
 ## Additional Resources
 
 - [OSRF/ROS Docker Images](https://hub.docker.com/r/osrf/ros/tags?page=1&ordering=last_updated)
