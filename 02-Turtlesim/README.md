@@ -79,7 +79,7 @@ Use the /cmd_vel topic to send linear and angular command velocities for the tur
 In addition to moving the turtle using cmd_vel publisher, we can access some other features of the enviornment using ROS Services.
 For example, to clean the background, to move the turtle to initial position, etc.
 
-Use /clear service to clear the background.
+Use `/clear` service to clear the background.
 
 ![services](./media/ServiceCall.jpg)
 
