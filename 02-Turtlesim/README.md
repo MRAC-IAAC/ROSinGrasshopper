@@ -50,6 +50,10 @@ We will use 4 containers:
 
 In turtlesim container `DISPLAY` is exposed to your novnc container `DISPLAY=novnc:0.0`.
 
+Here is an overview of how containers, noVNC GUI and Grasshopper work together.
+
+![diagram](./media/diagram.png)
+
 ## Running ROS Nodes
 
 Run your ros nodes using `docker-compose`:
