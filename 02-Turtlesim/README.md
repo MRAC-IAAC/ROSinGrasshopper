@@ -64,7 +64,7 @@ To access the GUI, Start your browser and go to the following address:
 http://0.0.0.0:8080/vnc.html
 ```
 
-Here is an overview of how containers, noVNC GUI and Grasshopper work together.
+Here is an overview of how ROS Nodes, noVNC GUI and Grasshopper work together.
 
 ![diagram](./media/diagram.png)
 
